@@ -97,6 +97,7 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"
 
 -- Personal plugins
+  use 'davepinto/virtual-column.nvim'
   use {
     'vimwiki/vimwiki',
     config = function()
