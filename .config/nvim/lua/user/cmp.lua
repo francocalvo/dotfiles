@@ -10,6 +10,7 @@ end
 
 require("luasnip").filetype_extend("vimwiki", {"markdown"})
 require("luasnip/loaders/from_vscode").lazy_load()
+require("luasnip/loaders/from_vscode").lazy_load({ paths = { "~/Documents/dotfiles/.config/nvim/snippets/" }})
 
 local check_backspace = function()
   local col = vim.fn.col "." - 1

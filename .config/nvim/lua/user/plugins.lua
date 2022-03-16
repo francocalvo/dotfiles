@@ -102,11 +102,14 @@ return packer.startup(function(use)
     'vimwiki/vimwiki',
     config = function()
         vim.g.vimwiki_global_ext = 0
-        vim.g.vimwiki_listsyms = "     X"
+        vim.g.vimwiki_listsyms = "     X" -- Sets the todo "icons"
         vim.g.vimwiki_autowriteall = 1
         vim.g.vimwiki_list = {
             {
                 path = '~/vimwiki/',
+                template_path = "~/vimwiki/templates/",
+                template_ext = ".md",
+                template_default = "unit",
                 syntax = 'markdown',
                 ext = '.md',
                 auto_toc = 1,

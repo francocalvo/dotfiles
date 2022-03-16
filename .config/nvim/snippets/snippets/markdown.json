@@ -1,0 +1,15 @@
+{
+  "Insert new unit template": {
+    "prefix": "newunit",
+    "body": [
+      "# Table of contents",
+      "<div class='hidden'>",
+      "# Contents",
+      "",
+      "<div>",
+      "{{<toc>}}",
+      "${0}"
+    ],
+    "description": "Add TOC from Vimwiki and Geekdocs."
+  },
+}
